@@ -1,0 +1,432 @@
+ /**
+ * 通用css样式布局处理
+ * Copyright (c) 2019 
+ */
+ /** 基础通用 **/
+
+ .pt5 {
+     padding-top: 5px;
+ }
+
+ .pr5 {
+     padding-right: 5px;
+ }
+
+ .pb5 {
+     padding-bottom: 5px;
+ }
+
+ .mt5 {
+     margin-top: 5px;
+ }
+
+ .mr5 {
+     margin-right: 5px;
+ }
+
+ .mb5 {
+     margin-bottom: 5px;
+ }
+
+ .mb8 {
+     margin-bottom: 8px;
+ }
+
+ .ml5 {
+     margin-left: 5px;
+ }
+
+ .mt5 {
+     margin-top: 10px;
+ }
+
+ .mt10 {
+     margin-top: 10px;
+ }
+
+ .mr10 {
+     margin-right: 10px;
+ }
+
+ .mb10 {
+     margin-bottom: 10px;
+ }
+
+ .ml0 {
+     margin-left: 10px;
+ }
+
+ .mt20 {
+     margin-top: 20px;
+ }
+
+ .mr20 {
+     margin-right: 20px;
+ }
+
+ .mb20 {
+     margin-bottom: 20px;
+ }
+
+ .m20 {
+     margin-left: 20px;
+ }
+
+ .tac {
+     text-align: center;
+ }
+
+ /*中间的过度的横线*/
+ .link-top {
+     width     : 100%;
+     height    : 1px;
+     border-top: solid #A8A8A8 1px;
+ }
+
+ /*画一条再右边的竖线*/
+ .link-right {
+     width       : 100px;
+     height      : 20%;
+     border-right: solid #A8A8A8 1px;
+ }
+
+ .el-dialog {
+     margin-top: 6vh !important;
+ }
+
+ .el-table .el-table__header-wrapper th {
+     word-break      : break-word;
+     background-color: #f8f8f9;
+     color           : #515a6e;
+     height          : 40px;
+     font-size       : 13px;
+ }
+
+ /** 表单布局 **/
+
+ .form-header {
+     font-size     : 15px;
+     color         : #6379bb;
+     border-bottom : 1px solid #ddd;
+     margin        : 8px 10px 25px 10px;
+     padding-bottom: 5px
+ }
+
+ /** 表格布局 **/
+
+ .pagination-container {
+     position     : relative;
+     height       : 25px;
+     margin-bottom: 10px;
+     margin-top   : 15px;
+     padding      : 10px 20px !important;
+ }
+
+ .pagination-container .el-pagination {
+     right   : 0;
+     position: absolute;
+ }
+
+ .el-table .fixed-width .el-button--mini {
+     color        : #409EFF;
+     padding-left : 0;
+     padding-right: 0;
+     width        : inherit;
+ }
+
+ .el-tree-node__content>.el-checkbox {
+     margin-right: 8px;
+ }
+
+ .list-group-striped>.list-group-item {
+     border-left  : 0;
+     border-right : 0;
+     border-radius: 0;
+     padding-left : 0;
+     padding-right: 0;
+ }
+
+ .list-group {
+     padding-left: 0px;
+     list-style  : none;
+ }
+
+ .list-group-item {
+     border-bottom: 1px solid #e7eaec;
+     border-top   : 1px solid #e7eaec;
+     margin-bottom: -1px;
+     padding      : 11px 0px;
+     font-size    : 13px;
+ }
+
+ .pull-right {
+     float: right !important;
+ }
+
+ .el-card__header {
+     padding   : 14px 15px 7px;
+     min-height: 40px;
+ }
+
+ .el-card__body {
+     padding: 15px 20px 20px 20px;
+ }
+
+ .card-box {
+     padding-right: 15px;
+     padding-left : 15px;
+     margin-bottom: 10px;
+ }
+
+ /* text color */
+
+ .text-navy {
+     color: #1ab394;
+ }
+
+ .text-primary {
+     color: inherit;
+ }
+
+ .text-success {
+     color: #1c84c6;
+ }
+
+ .text-info {
+     color: #23c6c8;
+ }
+
+ .text-warning {
+     color: #f8ac59;
+ }
+
+ .text-danger {
+     color: #ed5565;
+ }
+
+ /* 设置tooltip 的边框颜色*/
+ .el-tooltip__popper.is-light {
+     border: 1px solid #f2f4f7;
+ }
+
+ /*tooltip 顶部显示的箭头边框颜色*/
+ .el-tooltip__popper.is-light[x-placement^="top-start"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ .el-tooltip__popper.is-light[x-placement^="top"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ .el-tooltip__popper.is-light[x-placement^="top-end"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ /*tooltip 右侧显示的箭头边框颜色*/
+ .el-tooltip__popper.is-light[x-placement^="right-start"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ .el-tooltip__popper.is-light[x-placement^="right"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ .el-tooltip__popper.is-light[x-placement^="right-end"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ /*tooltip 下方显示的箭头边框颜色*/
+ .el-tooltip__popper.is-light[x-placement^="bottom-start"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ .el-tooltip__popper.is-light[x-placement^="bottom"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ .el-tooltip__popper.is-light[x-placement^="bottom-end"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ /*tooltip 左侧显示的箭头边框颜色*/
+ .el-tooltip__popper.is-light[x-placement^="left-start"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ .el-tooltip__popper.is-light[x-placement^="left"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ .el-tooltip__popper.is-light[x-placement^="left-end"] .popper__arrow {
+     border-right-color: #f2f4f7;
+ }
+
+ .text-muted {
+     color: #888888;
+ }
+
+ /* image */
+
+ .img-circle {
+     border-radius: 50%;
+ }
+
+ .img-lg {
+     width : 120px;
+     height: 120px;
+ }
+
+ .avatar-upload-preview {
+     position     : absolute;
+     top          : 50%;
+     transform    : translate(50%, -50%);
+     width        : 200px;
+     height       : 200px;
+     border-radius: 50%;
+     box-shadow   : 0 0 4px #ccc;
+     overflow     : hidden;
+ }
+
+ /** 级联选择 */
+
+ .el-cascader--mini {
+     max-width: 163.33px;
+ }
+
+ .el-cascader--small {
+     max-width: 177.33px;
+ }
+
+ .el-cascader--medium {
+     max-width: 191.33px;
+ }
+
+ .el-cascader--default {
+     max-width: 191.33px;
+ }
+
+ /** 下拉选择 */
+
+ .el-select--mini {
+     max-width: 163.33px;
+ }
+
+ .el-select--small {
+     max-width: 177.33px;
+ }
+
+ .el-select--medium {
+     max-width: 191.33px;
+ }
+
+
+ .el-select--default {
+     max-width: 191.33px;
+ }
+
+
+//  /** 输入框 */
+
+ .el-input--mini {
+     max-width: 163.33px;
+ }
+
+ .el-input--small {
+     max-width: 177.33px;
+ }
+
+ .el-input--medium {
+     max-width: 191.33px;
+ }
+
+ .el-input--default {
+     max-width: 191.33px;
+ }
+
+ 
+
+ /** 数值 */
+ .el-input-number--mini {
+     width: 163.33px;
+ }
+
+
+ .el-input-number--small {
+     width: 177.33px;
+ }
+
+ .el-input-number--medium {
+     width: 191.33px;
+ }
+
+ .el-input-number--default {
+     width: 191.33px;
+ }
+
+ /** 加了 clearable  filterable 等会导致控件宽度 变长 所以需要限制一下*/
+ .el-input--mini.el-input--suffix {
+     max-width: 163.33px;
+ }
+
+ .el-input--small.el-input--suffix {
+     max-width: 177.33px;
+ }
+
+ .el-input--medium.el-input--suffix {
+     max-width: 191.33px;
+ }
+
+ .el-input--default.el-input--suffix {
+     max-width: 191.33px;
+ }
+
+.el-input.el-input--100 {
+    max-width: 100%;
+}
+
+.el-textarea.el-input--100 {
+    max-width: 100%;
+}
+.el-select.el-input--100 {
+    max-width: 100%;
+}
+.el-input--suffix.el-input--100 {
+    max-width: 100%;
+}
+
+.el-select--100,.el-select--100>.el-input--mini.el-input--suffix{//这样才是指定子元素>    空格代表后代，包括子元素 或者孙元素
+    width: 100%;
+    max-width: 100%;
+}
+.el-textarea-box,.el-textarea.el-input--mini.el-input--suffix{//163.32*2+80*2+10*2
+    width: 100%;
+    max-width: 100%;
+}
+.el-textarea-box .el-form-item__content{
+    width: 418.64px;
+    max-width: 418.64px;
+}
+.el-style--11111{
+    width: 200px;
+}
+.el-style--22222{
+    width: 300px;
+}
+
+ /** table 的头背景色设置成白色 */
+
+ .el-table .el-table__header-wrapper th {
+     background-color: white;
+ }
+
+ .lefttree {
+     overflow-y: hidden;
+     overflow-x: scroll;
+     width     : 100%;
+     // border : 1px solid blue;
+ }
+
+ .el-tree {
+     min-width: 100%;
+     display  : inline-block !important;
+ }

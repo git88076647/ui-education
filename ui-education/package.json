@@ -1,0 +1,125 @@
+{
+  "name": "tanghx",
+  "version": "2.0.0",
+  "description": "费用核算平台",
+  "author": "创智优联",
+  "license": "",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build:render": "vue-cli-service build --target lib --name form-gen-render --dest ./src/components/render/lib/ ./src/components/render/render.js",
+    "build:parser": "vue-cli-service build --target lib --name form-gen-parser --dest ./src/components/parser/lib/ ./src/components/parser/index.js",
+    "build:prod": "vue-cli-service build",
+    "build:stage": "vue-cli-service build --mode staging",
+    "preview": "node build/index.js --preview",
+    "lint": "eslint --ext .js,.vue src vue-cli-service lint",
+    "test:unit": "jest --clearCache && vue-cli-service test:unit",
+    "test:ci": "npm run lint && npm run test:unit",
+    "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
+    "new": "plop"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "vue",
+    "admin",
+    "dashboard",
+    "element-ui",
+    "boilerplate",
+    "admin-template",
+    "management-system"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "@riophae/vue-treeselect": "0.4.0",
+    "axios": "^0.21.1",
+    "beautifier": "^0.1.7",
+    "clipboard": "^2.0.8",
+    "echarts": "^5.1.0",
+    "element-ui": "^2.15.1",
+    "file-saver": "^2.0.5",
+    "font-awesome": "^4.7.0",
+    "fuse.js": "^6.4.6",
+    "js-base64": "^3.6.0",
+    "js-beautify": "^1.13.13",
+    "js-cookie": "^2.2.1",
+    "js-md5": "^0.7.3",
+    "jsencrypt": "^3.2.0",
+    "lodash": "^4.17.21",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "numeral": "^2.0.6",
+    "path-to-regexp": "^6.2.0",
+    "qs": "^6.10.1",
+    "screenfull": "^5.1.0",
+    "sortablejs": "^1.13.0",
+    "vue": "^2.6.12",
+    "vue-codemirror": "^4.0.6",
+    "vue-count-to": "^1.0.13",
+    "vue-cropper": "^0.5.6",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.5.1",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.6.2",
+    "vxe-table": "^3.2.20",
+    "xe-utils": "^3.2.1",
+    "xlsx": "^0.16.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/parser": "^7.13.16",
+    "@babel/register": "^7.13.16",
+    "@vue/cli-plugin-babel": "^4.5.12",
+    "@vue/cli-plugin-eslint": "^4.5.12",
+    "@vue/cli-plugin-unit-jest": "^4.5.12",
+    "@vue/cli-service": "^4.5.12",
+    "@vue/test-utils": "^1.1.4",
+    "autoprefixer": "^10.2.5",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "chalk": "^4.1.1",
+    "chokidar": "^3.5.1",
+    "connect": "^3.7.0",
+    "core-js": "^3.11.0",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.9.0",
+    "html-webpack-plugin": "^5.3.1",
+    "http-proxy-middleware": "^1.3.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "mockjs": "^1.1.0",
+    "node-sass": "^5.0.0",
+    "plop": "^2.7.4",
+    "runjs": "^4.4.2",
+    "sass-loader": "^10.1.1",
+    "script-ext-html-webpack-plugin": "^2.1.5",
+    "script-loader": "^0.7.2",
+    "serve-static": "^1.14.1",
+    "svg-sprite-loader": "^6.0.6",
+    "svgo": "^2.3.0",
+    "vue-splitpane": "^1.0.6",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "engines": {
+    "node": ">=8.9",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
